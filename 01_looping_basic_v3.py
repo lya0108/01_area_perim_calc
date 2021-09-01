@@ -28,7 +28,6 @@ def num_check(question):
 
 width = num_check("width: ")
 height = num_check("height: ")
-print()
-print("width", width)
-print("height", height)
-print()
+
+area = width*height
+perimeter = 2(width+height)
