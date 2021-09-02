@@ -7,8 +7,8 @@ def num_check(question):
     valid = False
     while not valid:
 
-        error = "please enter a number that is more than zero"
-
+        error1 = "please enter a number that is more than zero"
+        error2 = "please enter a number"
         try:
 
             response = float(input(question))
@@ -17,17 +17,32 @@ def num_check(question):
                 return response 
 
             else:
-                print(error)
+                print(error1)
                 print()
 
         except ValueError:
-            print(error)
+            print(error2)
             print()
 
+print()
+print("***** Area / Perimeter Calculator *****")
+print()
+
+looping = ""
+while looping == "":
+
+    width = num_check("width: ")
+    height = num_check("height: ")
+
+    area = width*height
+    perimeter = 2*(width + height)
+
+    print("Perimeter: {} units".format(perimeter))
+    print("Area: {} square units".format(area))
+    print()
 
 
-width = num_check("width: ")
-height = num_check("height: ")
+    looping = input("press <enter> to continue or any key to quit")
 
-area = width*height
-perimeter = 2(width+height)
+print()
+print("thank you for using the area / perimeter calculator")
