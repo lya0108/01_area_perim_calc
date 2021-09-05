@@ -37,8 +37,8 @@ while looping == "":
     area = width*height
     perimeter = 2*(width + height)
 
-    print("Perimeter: {} units".format(perimeter))
-    print("Area: {} square units".format(area))
+    print("Perimeter: {:.2f} units".format(perimeter))
+    print("Area: {:.2f} square units".format(area))
     print()
 
 
