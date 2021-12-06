@@ -45,4 +45,4 @@ while looping == "":
     looping = input("press <enter> to continue or any key to quit")
 
 print()
-print("thank you for using the area / perimeter calculator")
+print("thank you for using the area / perimeter calculator")    
